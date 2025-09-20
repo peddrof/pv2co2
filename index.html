@@ -12,8 +12,6 @@
 	</style>
 	<link rel='dns-prefetch' href='//www.googletagmanager.com' />
 
-	<!-- <link rel="alternate" type="application/rss+xml" title="Feed para Offline Club &raquo;" href="//offlineclub.com.br/feed/" /> -->
-	<!-- <link rel="alternate" type="application/rss+xml" title="Feed de comentários para Offline Club &raquo;" href="//offlineclub.com.br/comments/feed/" /> -->
 	<style id='wp-emoji-styles-inline-css'>
 		img.wp-smiley,
 		img.emoji {
@@ -579,12 +577,7 @@
 	</script>
 	<script src="wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
 	<script src="wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
-	<!-- <link rel="https://api.w.org/" href="//offlineclub.com.br/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="//offlineclub.com.br/wp-json/wp/v2/pages/488" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="//offlineclub.com.br/xmlrpc.php?rsd" /> -->
 	<meta name="generator" content="WordPress 6.8.2" />
-	<!-- <link rel="canonical" href="//offlineclub.com.br/" /> -->
-	<!-- <link rel='shortlink' href='//offlineclub.com.br/' /> -->
-	<!-- <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="//offlineclub.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fofflineclub.com.br%2F" /> -->
-	<!-- <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="//offlineclub.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fofflineclub.com.br%2F&#038;format=xml" /> -->
 	<meta name="generator" content="Site Kit by Google 1.156.0" />
 	<meta name="generator"
 		content="Elementor 3.30.4; features: e_font_icon_svg, additional_custom_breakpoints, e_element_cache; settings: css_print_method-external, google_font-enabled, font_display-swap">
@@ -727,10 +720,16 @@
 		.timeline-line {
 			position: absolute;
 			left: 50%;
-			top: 0;
-			width: 8px;
-			height: 100%;
-			background: linear-gradient(to bottom, transparent 0%, #333 20%, #333 80%, transparent 100%);
+			width: 10px;
+			background: linear-gradient(to bottom, 
+				transparent 0%, 
+				rgba(51, 51, 51, 0.2) 10%, 
+				rgba(51, 51, 51, 0.8) 20%, 
+				#333 30%, 
+				#333 70%, 
+				rgba(51, 51, 51, 0.8) 80%, 
+				rgba(51, 51, 51, 0.2) 90%, 
+				transparent 100%);
 			transform: translateX(-50%);
 			z-index: 1;
 		}
@@ -738,10 +737,17 @@
 		.timeline-progress {
 			position: absolute;
 			left: 50%;
-			top: 0;
-			width: 8px;
+			width: 10px;
 			height: 0%;
-			background: #ffffff;
+			background: linear-gradient(to bottom, 
+				transparent 0%, 
+				rgba(255, 255, 255, 0.2) 10%, 
+				rgba(255, 255, 255, 0.8) 20%, 
+				#ffffff 30%, 
+				#ffffff 70%, 
+				rgba(255, 255, 255, 0.8) 80%, 
+				rgba(255, 255, 255, 0.2) 90%, 
+				transparent 100%);
 			transform: translateX(-50%);
 			z-index: 2;
 			transition: none;
@@ -791,6 +797,7 @@
 			max-width: 450px;
 			width: 100%;
 			backdrop-filter: blur(10px);
+			box-shadow: inset 0 0 20px #696969;
 			transition: all 0.3s ease;
 		}
 
@@ -804,7 +811,7 @@
 
 		.step-content:hover {
 			transform: translateY(-5px);
-			box-shadow: 0 20px 40px rgba(255, 255, 255, 0.1);
+			box-shadow: inset 0 0 20px #444444;
 			border-color: rgba(255, 255, 255, 0.3);
 		}
 
@@ -850,7 +857,10 @@
 				padding: 0 20px;
 			}
 
-			
+			/* Move main title further down on mobile */
+			.elementor-element-ece30a5 {
+				margin-top: 120px !important;
+			}
 
 			.method-subtitle {
 				margin-bottom: 60px;
@@ -895,6 +905,22 @@
 
 			.step-description {
 				font-size: 1rem;
+			}
+
+			/* Footer spacing adjustments for mobile */
+			.elementor-element-1687b65 {
+				flex-direction: column !important;
+				gap: 30px !important;
+			}
+
+			.elementor-element-470897d,
+			.elementor-element-cde9972,
+			.elementor-element-28399d3 {
+				margin-bottom: 0px !important;
+			}
+
+			.elementor-element-28399d3 {
+				margin-bottom: 0 !important;
 			}
 		}
 
@@ -1827,12 +1853,12 @@
 				<img width="596" height="165"
 					src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20596%20165'%3E%3C/svg%3E"
 					class="attachment-full size-full wp-image-955" alt=""
-					data-lazy-srcset="wp-content/uploads/2025/08/offlineclub-logo.png 596w,   wp-content/uploads/2025/08/offlineclub-logo-300x83.png 300w"
+					data-lazy-srcset="wp-content/uploads/2025/03/os.png 596w,   wp-content/uploads/2025/03/os.png 300w"
 					data-lazy-sizes="(max-width: 596px) 100vw, 596px"
-					data-lazy-src="wp-content/uploads/2025/08/offlineclub-logo.png" /><noscript><img width="596"
-						height="165" src="wp-content/uploads/2025/08/offlineclub-logo.png"
+					data-lazy-src="wp-content/uploads/2025/03/os.png" /><noscript><img width="596"
+						height="165" src="wp-content/uploads/2025/03/os.png"
 						class="attachment-full size-full wp-image-955" alt=""
-						srcset="wp-content/uploads/2025/08/offlineclub-logo.png 596w,   wp-content/uploads/2025/08/offlineclub-logo-300x83.png 300w"
+						srcset="wp-content/uploads/2025/03/os.png 596w,   wp-content/uploads/2025/03/os.png 300w"
 						sizes="(max-width: 596px) 100vw, 596px" /></noscript>
 			</div>
 			<div class="elementor-element elementor-element-afc844b elementor-widget elementor-widget-heading"
@@ -1992,11 +2018,12 @@
 
 		function initTimelineAnimation() {
 			const timelineSteps = document.querySelectorAll('.timeline-step');
+			const timelineLine = document.querySelector('.timeline-line');
 			const timelineProgress = document.getElementById('timeline-progress');
 			const timelinePointer = document.getElementById('timeline-pointer');
 			const timelineSection = document.getElementById('how');
 
-			if (!timelineSteps.length || !timelineProgress || !timelinePointer || !timelineSection) return;
+			if (!timelineSteps.length || !timelineLine || !timelineProgress || !timelinePointer || !timelineSection) return;
 
 			function updateTimeline() {
 				const sectionTop = timelineSection.offsetTop;
@@ -2016,13 +2043,19 @@
 				const scrollEnd = sectionTop + lastStepBottom - windowHeight * 0.5;
 				const scrollProgress = Math.max(0, Math.min(1, (scrollY - scrollStart) / (scrollEnd - scrollStart)));
 
-				// Set progress line to exactly cover the space from first box start to last box end
+				// Set timeline line and progress line to exactly cover the space from first box start to last box end
+				// Add offset to push timeline down (adjust this value as needed)
+				const timelineOffset = 205; // pixels to push timeline down
 				const progressHeight = lastStepBottom - firstStepTop;
+				const timelineTop = firstStepTop + timelineOffset;
+				
+				timelineLine.style.height = progressHeight + 'px';
+				timelineLine.style.top = timelineTop + 'px';
 				timelineProgress.style.height = progressHeight + 'px';
-				timelineProgress.style.top = firstStepTop + 'px';
+				timelineProgress.style.top = timelineTop + 'px';
 
 				// Update pointer position within the progress range
-				const pointerTop = firstStepTop + (scrollProgress * progressHeight);
+				const pointerTop = timelineTop + (scrollProgress * progressHeight);
 				timelinePointer.style.top = pointerTop + 'px';
 
 				// Animate steps as they come into view
