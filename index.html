@@ -1086,9 +1086,151 @@
 				pointer-events: none;
 			}
 			
-			/* Hide APPLY NOW button with SVG on mobile */
-			.elementor-button.elementor-button-link.elementor-size-sm {
+			/* Hide only the header APPLY NOW button with SVG on mobile */
+			.elementor-element-48c6262 .elementor-button.elementor-button-link.elementor-size-sm {
 				display: none !important;
+			}
+			
+			/* Ensure buttons in #anc and #faq sections are visible on mobile */
+			#anc .elementor-button.elementor-button-link.elementor-size-sm,
+			#faq .elementor-button.elementor-button-link.elementor-size-sm {
+				display: block !important;
+				width: 100% !important;
+				max-width: 300px !important;
+				margin: 0 auto !important;
+				text-align: center !important;
+				padding: 15px 20px !important;
+				font-size: 14px !important;
+				font-weight: 500 !important;
+				text-transform: uppercase !important;
+				border-radius: 40px !important;
+				text-decoration: none !important;
+				transition: all 0.3s ease !important;
+			}
+			
+			/* START APPLICATION button styling - silver background, black text (matching desktop) */
+			#anc .elementor-button.elementor-button-link.elementor-size-sm {
+				background-color: #d1d1d1 !important;
+				color: #000000 !important;
+				border: 2px solid #ffffff !important;
+			}
+			
+			#anc .elementor-button.elementor-button-link.elementor-size-sm:hover {
+				background-color: #f0f0f0 !important;
+				box-shadow: 0 0 42px rgba(255, 255, 255, 1) !important;
+			}
+			
+			/* TALK TO SUPPORT button styling - white background, black text */
+			#faq .elementor-button.elementor-button-link.elementor-size-sm {
+				background-color: #ffffff !important;
+				color: #000000 !important;
+				border: 2px solid #000000 !important;
+			}
+			
+			#faq .elementor-button.elementor-button-link.elementor-size-sm:hover {
+				background-color: #f0f0f0 !important;
+				box-shadow: 0 0 30px rgba(0, 0, 0, 0.3) !important;
+			}
+			
+			/* Mobile styles for hero buttons in #how section */
+			.hero-buttons-container {
+				flex-direction: column !important;
+				gap: 15px !important;
+				width: 100% !important;
+				padding: 0 20px !important;
+				margin-top: 30px !important;
+			}
+			
+			.hero-button {
+				width: 100% !important;
+				max-width: none !important;
+				margin: 0 !important;
+				padding: 15px 20px !important;
+				font-size: 14px !important;
+			}
+			
+			/* Mobile styles for hero buttons in all sections */
+			#what .hero-buttons-container,
+			#how .hero-buttons-container {
+				flex-direction: column !important;
+				gap: 15px !important;
+				width: 100% !important;
+				padding: 0 20px !important;
+			}
+			
+			#what .hero-button,
+			#how .hero-button {
+				width: 100% !important;
+				max-width: none !important;
+				margin: 0 !important;
+				padding: 15px 20px !important;
+				font-size: 14px !important;
+			}
+			
+			/* Ensure proper spacing and visibility for button containers */
+			.container-botao {
+				width: 100% !important;
+				display: flex !important;
+				justify-content: center !important;
+				margin-top: 20px !important;
+				box-shadow: none !important;
+			}
+			
+			/* Prevent glow effect from affecting containers */
+			#anc .container-botao,
+			#faq .e-con-full.e-flex.e-con.e-child {
+				box-shadow: none !important;
+			}
+			
+			/* Completely disable glow effects on mobile for START APPLICATION button */
+			.container-botao::before,
+			.container-botao::after {
+				display: none !important;
+				opacity: 0 !important;
+				visibility: hidden !important;
+			}
+			
+			.botao .elementor-button::before {
+				display: none !important;
+				opacity: 0 !important;
+				visibility: hidden !important;
+			}
+			
+			/* Ensure the button container is properly centered and has no glow */
+			#anc .container-botao {
+				background: none !important;
+				padding: 0 !important;
+				position: static !important;
+				z-index: auto !important;
+			}
+			
+			/* Make sure the button itself is properly styled without glow effects */
+			#anc .botao .elementor-button {
+				position: static !important;
+				z-index: auto !important;
+				overflow: visible !important;
+			}
+			
+			/* Make sure buttons in #anc section are properly centered */
+			#anc .e-con-full.e-flex.e-con.e-child {
+				justify-content: center !important;
+				align-items: center !important;
+				display: flex !important;
+			}
+			
+			/* Additional centering for the specific button container in #anc */
+			#anc .elementor-element-a9c5446 {
+				justify-content: center !important;
+				align-items: center !important;
+				display: flex !important;
+				width: 100% !important;
+			}
+			
+			/* Make sure buttons in #faq section are properly centered */
+			#faq .e-con-full.e-flex.e-con.e-child {
+				justify-content: center !important;
+				align-items: center !important;
+				display: flex !important;
 			}
 			
 			/* Disable menu functionality on mobile - make it non-clickable */
@@ -1116,6 +1258,13 @@
 				align-items: center !important;
 				position: relative !important;
 				z-index: 10 !important;
+				top: 0 !important;
+				margin-top: 10px !important;
+			}
+			
+			/* Add minimal top padding to parent container for proper spacing */
+			.elementor-element-9997ec4 .e-con-inner {
+				padding-top: 10px !important;
 			}
 			
 			/* Logo positioning - center left */
